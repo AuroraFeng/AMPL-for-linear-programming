@@ -6,5 +6,5 @@ Create new line in ReadMe.md: http://stackoverflow.com/questions/24575680/new-li
 Download: http://ampl.com/try-ampl/download-a-demo-version/  
 Textbook: http://ampl.com/resources/the-ampl-book/chapter-downloads/  
 Problem(s) corresponding to each script:  
-Exercise 1.1 
+Exercise 1.1 advertise.mod
 
