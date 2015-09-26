@@ -1,0 +1,20 @@
+var x1 >=0;
+var x2 integer >=0;
+var x3 >=0;
+
+maximize Customer:1.8*x1+x2+0.25*x3;
+
+subject to Budget:2*x1+x2+0.2*x3<=100;
+subject to Resource: x1+3*x2+(1/7)*x3<=100;
+subject to Constraint1:x1>=10;
+subject to Constraint3:x3<=120;
+
+#saved as "advertise.mod"
+#type the following commands in ampl:prompt
+
+reset;
+model advertise.mod;
+option solver cplex; #switch to cplex from minos to address integrality constraint
+solve;
+display x1,x2,x3;
+
